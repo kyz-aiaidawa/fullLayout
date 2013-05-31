@@ -1,6 +1,15 @@
 *.class
-
+/target/
+/nbproject/
+/dist/
+/build/
 # Package Files #
 *.jar
 *.war
 *.ear
+*.?ar
+*.iml
+*.ipr
+*.iws
+*.NavData
+*.navData
