@@ -30,14 +30,15 @@ import org.primefaces.extensions.model.layout.LayoutOptions;
  * @author  Oleg Varaksin / last modified by $Author$
  * @version $Revision$
  */
-@ApplicationScoped
-@ManagedBean(eager = true)
+//@ApplicationScoped
+//@ManagedBean(eager = true)
 public class ShowcaseLayout {
 
 	private String options;
 
 	@PostConstruct
 	protected void initialize() {
+             
 		LayoutOptions layoutOptions = new LayoutOptions();
 
 		// for all panes
@@ -105,6 +106,7 @@ public class ShowcaseLayout {
 
 		// serialize options to JSON string (increase perf.)
 		options = layoutOptions.toJson();
+                 
 	}
 
 	public String getOptions() {
